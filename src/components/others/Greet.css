@@ -1,0 +1,60 @@
+.button-dice{
+    margin-Bottom:10px;
+    width:100px;
+    height:100px;
+    color:#E4CDFF;
+    font-Size:20px;
+    font-Weight:700;
+    background-Color:#9862E9;
+    border:#483169 solid 5px;
+    border-Radius:10px;
+    cursor: pointer;
+    transition: all 400ms ease;
+}
+.button-dice::after{
+    position: absolute;
+    content: "-";
+    background-color: rgb(0, 0, 0);
+    width: 20px;
+    height: 20px;
+    margin-top: 36px;
+    margin-left: 2px;
+    color: rgb(0, 0, 0);
+    border-radius: 50%;
+    transition: all 500ms ease-out;
+}
+.button-dice:hover::after{
+    background-color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    margin-top: -31px;
+    margin-left: 1px;
+}
+.button-dice::before{
+    position: absolute;
+    content: "-";
+    background-color: rgb(255, 255, 255);
+    width: 20px;
+    height: 20px;
+    margin-top: -31px;
+    margin-left: -21px;
+    color: rgb(255, 255, 255);
+    border-radius: 50%;
+    transition: all 500ms ease-out;
+}
+.button-dice:hover::before{
+    background-color: rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
+    margin-top: 35px;
+    margin-left: -21px;
+}
+
+.button-dice:hover{
+    color: #ead8ff;
+    background-Color:#b686ff;
+    box-shadow: 2px 2px 6px rgb(0, 0, 0, 0.7);
+}
+.button-dice:focus{
+    color: #654183;
+    background-color: #e1c0ff;
+    transition: none;
+}
